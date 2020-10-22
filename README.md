@@ -5,8 +5,15 @@
 ### Version
 * python: 3.8.5
 
-### pip install
-* PyPDF2==1.26.0
+### Docker
+* docker build
+``` bash
+$ docker build -t < Image Name >:latest .
+```
+* docker run
+```bash
+$ docker run -it --rm -v <host-path>:/python_doc < image Name > bash
+```
 
 ## Usage
 
