@@ -1,18 +1,18 @@
-# marge-pdf
+# merge PDF
 ## About
 * ちょっとしたPDFファイルの結合に便利
 
-### Version
-* python: 3.8.5
+## version
+* python: 3.9.0
 
-### Docker
+## Docker
 * docker build
 ``` bash
-$ docker build -t < Image Name >:latest .
+$ docker-compose up -d
 ```
-* docker run
+* docker run: bash で操作
 ```bash
-$ docker run -it --rm -v <host-path>:/python_doc < image Name > bash
+$ docker-compose exec web bash
 ```
 
 ## Usage
@@ -30,7 +30,7 @@ $ docker run -it --rm -v <host-path>:/python_doc < image Name > bash
 
 ``` bash
 # 実行コマンド
-$ python marge_pdf.py <PDF dir name> <marge PDF file name>
+$ python merge_pdf.py <PDF dir name> <merge PDF file name>
 ```
 
 
